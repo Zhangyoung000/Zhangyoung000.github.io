@@ -4,11 +4,11 @@ window.onload = function(){
     //��ȡ������������
     var context =canvas.getContext("2d");
     var s = window.screen;
-    var W = canvas.width = s.width;
-    var H = canvas.height;
+    //var W = canvas.width = s.width;
+    //var H = canvas.height;
     //��ȡ�������Ļ�Ŀ��Ⱥ͸߶�
-    //var W = window.innerWidth;
-    //var H = window.innerHeight;
+    var W = window.innerWidth;
+    var H = window.innerHeight;
     //����canvas�Ŀ��Ⱥ͸߶�
     canvas.width = W;
     canvas.height = H;
@@ -23,7 +23,7 @@ window.onload = function(){
         drops.push(0);
     }
     //�˶�������
-    var str ="WELCOME TO WWW.ITRHX.COM";
+    var str ="WELCOME TO ZYBLOG";
     //4:fillText(str,x,y);ԭ������ȥ����y������λ��
     //�滭�ĺ���
     function draw(){
