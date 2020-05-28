@@ -13,7 +13,7 @@ window.onload = function(){
     canvas.width = W;
     canvas.height = H;
     //ÿ�����ֵ������С
-    var fontSize = 6;
+    var fontSize = 10;
     //������
     var colunms = Math.floor(W /fontSize);	
     //��¼ÿ�����ֵ�y������
