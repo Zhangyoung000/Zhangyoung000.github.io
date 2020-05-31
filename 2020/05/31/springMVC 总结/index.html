@@ -112,14 +112,14 @@
 <meta property="og:url" content="http://yoursite.com/2020/05/31/springMVC%20%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Young的个人博客">
 <meta property="og:description" content="记录了SpringMVC的大部分知识点。">
-<meta property="og:image" content="c:%5CUsers%5CYoung%5CDesktop%5Cmd%E5%9B%BE%E7%89%87%5Cspringmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png">
+<meta property="og:image" content="https://zyity.cn/img/springmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png">
 <meta property="article:published_time" content="2020-05-31T05:50:00.000Z">
-<meta property="article:modified_time" content="2020-05-31T06:00:57.488Z">
+<meta property="article:modified_time" content="2020-05-31T06:11:40.517Z">
 <meta property="article:author" content="Young">
 <meta property="article:tag" content="学习总结">
 <meta property="article:tag" content="SpringMVC">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:%5CUsers%5CYoung%5CDesktop%5Cmd%E5%9B%BE%E7%89%87%5Cspringmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png">
+<meta name="twitter:image" content="https://zyity.cn/img/springmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png">
 
 
 
@@ -520,7 +520,7 @@
 <a id="more"></a>
 
 <p>springmvc请求响应流程图：</p>
-<p><img src="C:%5CUsers%5CYoung%5CDesktop%5Cmd%E5%9B%BE%E7%89%87%5Cspringmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png" alt=""></p>
+<p><img src="https://zyity.cn/img/springmvc%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B.png" alt=""></p>
 <h3 id="1-配置前端控制器"><a href="#1-配置前端控制器" class="headerlink" title="1. 配置前端控制器"></a>1. 配置前端控制器</h3><p>在<strong>web.xml</strong>中配置：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">&lt;!--  配置前端控制器--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>dispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:mvc.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--  配置初始化参数，读取配置文件，创建spring容器--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>dispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
